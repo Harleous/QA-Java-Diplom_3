@@ -9,9 +9,6 @@ public class LoginClient {
         this.password = password;
     }
 
-    public LoginClient() {
-
-    }
 
 
     public String getEmail() {

@@ -11,21 +11,23 @@ public class AuthFormPage extends BasePage {
         super(driver);
     }
     //ФОРМА АВТОРИЗАЦИИ
-    //кнопка "Войти"
-    private final By EnterButtonInAuthForm = By.xpath(".//form/button [text() = 'Войти']");
     //кнопка  "Восстановить пароль"
     private final By passwordRecoveryFormEnterButton = By.xpath(".//div/p/a[@class = 'Auth_link__1fOlj' and text() = 'Войти']");
     //кнопка "Зарегистрироваться"
     private final By registrationButtonInAUthForm = By.xpath(".//div/p[1]/a[@class = 'Auth_link__1fOlj' and text() = 'Зарегистрироваться']");
-private final By authFormName = By.xpath(".//fieldset[1]//input");
-private final By authFormPass = By.xpath(".//fieldset[2]//input");
+    private final By authFormEmail = By.xpath("//input[@name='name']");
+    private final By authFormPass = By.xpath("//input[@name='Пароль']");
+    private final By EnterButtonInAuthForm = By.xpath("//button[contains(text(),'Войти')]");
 
-public void authorize(){
-    CreateClient createClient = new CreateClient();
+public void authorize(CreateClient createClient){
+
     LoginClient loginClient = LoginClient.fromCreateClientData(createClient);
 
-    driver.findElement(authFormName).sendKeys(loginClient.getEmail());
+    driver.findElement(authFormEmail).click();
+    driver.findElement(authFormEmail).sendKeys(loginClient.getEmail());
+
     driver.findElement(authFormPass).sendKeys(loginClient.getPassword());
+
     driver.findElement(EnterButtonInAuthForm).click();
 
 }

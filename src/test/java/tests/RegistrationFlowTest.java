@@ -1,6 +1,8 @@
 package tests;
 
 import basePages.BaseTest;
+import dataProvider.CreateClient;
+import dataProvider.RegFormRandomData;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
@@ -15,11 +17,13 @@ AuthFormPage authFormPage = new AuthFormPage(driver);
 
 @Test
     public void registrationFlowOpensAuthorizationPageTest(){
+    CreateClient createClient = RegFormRandomData.randomClientData();
+
     registrationFormPage.openRegistrationPage();
-    registrationFormPage.registerClient();
+    registrationFormPage.registerClient(createClient);
     driver.manage().timeouts().pageLoadTimeout(10000,
             TimeUnit.MILLISECONDS);
-    authFormPage.authorize();
+    authFormPage.authorize(createClient);
 
 }
 /*@After
