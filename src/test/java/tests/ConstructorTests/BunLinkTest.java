@@ -5,6 +5,8 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.AuthFormPage;
 
 import static pageObjects.BurgerHomePage.openHomePage;
@@ -22,9 +24,9 @@ public class BunLinkTest {
 
         openHomePage();
         clickSoucesButton();
-        //new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(SOUCES_BUTTON,"class","tab_tab_type_current__2BEPc"));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(SOUCES_BUTTON,"class","tab_tab_type_current__2BEPc"));
         clickBunButton();
-        //new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(BUN_BUTTON,"class","tab_tab_type_current__2BEPc"));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(BUN_BUTTON,"class","tab_tab_type_current__2BEPc"));
         String actualClass = driver.findElement(BUN_BUTTON).getAttribute("class").toString();
         Assert.assertTrue(actualClass.contains("tab_tab_type_current__2BEPc"));
 

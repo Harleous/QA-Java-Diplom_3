@@ -1,0 +1,114 @@
+{
+  "total" : 12,
+  "items" : [ {
+    "uid" : "fa84d88719c70af4a47d855d289a00e8",
+    "name" : "tests.ConstructorTests.BunLinkTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "1dc7009873c281041f13b0f29bf308af",
+    "name" : "tests.ConstructorTests.FillersTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "07569fc3e43dc785ac4aa3e38d5088bc",
+    "name" : "tests.ConstructorTests.SoucesTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "bc58adb7b1b2ab5b2f6d1ac2ee921212",
+    "name" : "tests.enterPersonalAccountTests.EnterAccountWithEnterButtonInRegFormTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "60949d6a37165fd160947b8e404e68e4",
+    "name" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "833ea908f13cb661be4ebde06fe85e49",
+    "name" : "tests.enterPersonalAccountTests.EnterPersonalAccountTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "a7954df08e0daa864457a03fc1550aec",
+    "name" : "tests.ProfileTests.ConstructorLinkFromProfileTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "6cf24138bf458427182a36c6e5e6ec3f",
+    "name" : "tests.ProfileTests.EnterProfileWithHeaderProfileButtonTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "f94edf3fc6d2901f7cc7bdc9e50acd07",
+    "name" : "tests.ProfileTests.LogoFromProfileClickTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "a2fbf3ff4b78f2497687e373e67b8cf6",
+    "name" : "tests.ProfileTests.LogOutTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

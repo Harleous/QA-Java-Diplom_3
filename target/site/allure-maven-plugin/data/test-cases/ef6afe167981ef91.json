@@ -1,0 +1,56 @@
+{
+  "uid" : "ef6afe167981ef91",
+  "name" : "registrationFlowOpensAuthorizationPageTest",
+  "fullName" : "tests.registrationTests.RegistrationFlowTest.registrationFlowOpensAuthorizationPageTest",
+  "historyId" : "f9aa02c2af44006e8bcaa15c841bb75d",
+  "time" : {
+    "start" : 1696784937563,
+    "stop" : 1696784942202,
+    "duration" : 4639
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.registrationTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.registrationTests.RegistrationFlowTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationFlowOpensAuthorizationPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.registrationTests.RegistrationFlowTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ef6afe167981ef91.json",
+  "parameterValues" : [ ]
+}

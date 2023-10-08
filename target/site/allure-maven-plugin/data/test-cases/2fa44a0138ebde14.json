@@ -1,0 +1,56 @@
+{
+  "uid" : "2fa44a0138ebde14",
+  "name" : "enterPersonalAccountTest",
+  "fullName" : "tests.ConstructorTests.BunLinkTest.enterPersonalAccountTest",
+  "historyId" : "77e6784417fa93d56e1b7842a609596b",
+  "time" : {
+    "start" : 1696784818525,
+    "stop" : 1696784832803,
+    "duration" : 14278
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ConstructorTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ConstructorTests.BunLinkTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "enterPersonalAccountTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.ConstructorTests.BunLinkTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2fa44a0138ebde14.json",
+  "parameterValues" : [ ]
+}

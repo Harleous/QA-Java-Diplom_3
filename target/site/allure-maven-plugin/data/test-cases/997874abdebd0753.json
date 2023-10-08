@@ -1,0 +1,56 @@
+{
+  "uid" : "997874abdebd0753",
+  "name" : "enterPersonalAccountTest",
+  "fullName" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest.enterPersonalAccountTest",
+  "historyId" : "cf508d6b17780b0cfd51e4ab0afb6144",
+  "time" : {
+    "start" : 1696784861583,
+    "stop" : 1696784874873,
+    "duration" : 13290
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.enterPersonalAccountTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "enterPersonalAccountTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "997874abdebd0753.json",
+  "parameterValues" : [ ]
+}
