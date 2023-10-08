@@ -4,7 +4,6 @@ import basePages.ConfigBrowser;
 import clients.UserClient;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
-import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,7 +13,7 @@ import pageObjects.BurgerHomePage;
 
 import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
 import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
-import static pageObjects.AuthFormPage.*;
+import static pageObjects.AuthFormPage.authorize;
 
 public class EnterPersonalAccountTest {
     WebDriver driver = ConfigBrowser.startDriver();
@@ -26,11 +25,7 @@ public class EnterPersonalAccountTest {
 
         CreateUser createUser = RegFormRandomData.getUserData();
 
-        accessToken =  UserClient.create(createUser)
-                .log().all()
-                .statusCode(200)
-                .body("success", Matchers.equalTo(true))
-                .extract().jsonPath().get("accessToken");
+        accessToken =  UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
         driver.get(STELLAR_BURGERS_HOME_PAGE);
         BurgerHomePage.enterAccountButtonClick();

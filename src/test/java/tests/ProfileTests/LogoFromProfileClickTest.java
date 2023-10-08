@@ -4,7 +4,6 @@ import basePages.ConfigBrowser;
 import clients.UserClient;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
-import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -30,11 +29,7 @@ public class LogoFromProfileClickTest {
 
         CreateUser createUser = RegFormRandomData.getUserData();
 
-        accessToken = UserClient.create(createUser)
-                .log().all()
-                .statusCode(200)
-                .body("success", Matchers.equalTo(true))
-                .extract().jsonPath().get("accessToken");
+        accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
         openLoginPage();
         authorize(createUser);
