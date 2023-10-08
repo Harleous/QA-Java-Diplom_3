@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static constants.ConstantUrls.STELLAR_BURGER_LOGIN_PAGE;
 import static constants.LocatorsAndDataConstants.WRONG_PASSWORD;
 import static constants.LocatorsAndDataConstants.WRONG_PASSWORD_MESSAGE;
 
@@ -29,6 +30,10 @@ public class AuthFormPage extends BasePage {
 
     public AuthFormPage(WebDriver driver) {
         super(driver);
+    }
+
+    public static void openLoginPage(){
+        driver.get(STELLAR_BURGER_LOGIN_PAGE);
     }
 
 

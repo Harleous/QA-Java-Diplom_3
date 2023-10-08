@@ -15,14 +15,14 @@ public class RegistrationFormPage extends BasePage {
 
     // ФОРМА РЕГИСТРАЦИИ
     //Поле ввода "Имя"
-    private final By nameFieldInRegForm = By.xpath(".//fieldset[1]//input");
+    private static final By nameFieldInRegForm = org.openqa.selenium.By.xpath(".//fieldset[1]//input");
     //поле ввода "E-mail"
-    private final By emailFieldInRegForm = By.xpath(".//fieldset[2]//input");
+    private static final By emailFieldInRegForm = By.xpath(".//fieldset[2]//input");
     //поле ввода "Пароль"
-    private final By passwordFieldInRegForm = By.xpath(".//fieldset[3]//input");
+    private static final By passwordFieldInRegForm = By.xpath(".//fieldset[3]//input");
     // Кнопка "Зарегистрироваться"
-    private final By registerButtonInRegForm = By.xpath(".//form/button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa' and text() = 'Зарегистрироваться']");
-private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
+    private static final By registerButtonInRegForm = By.xpath(".//form/button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa' and text() = 'Зарегистрироваться']");
+private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = org.openqa.selenium.By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
 
 
 
@@ -35,7 +35,7 @@ public static void clickEnterButtonInRegForm(){
 }
 
 
-    public  void registerUser(CreateUser createUser) {
+    public static void registerUser(CreateUser createUser) {
 
 
         driver.findElement(nameFieldInRegForm).sendKeys(createUser.getName());

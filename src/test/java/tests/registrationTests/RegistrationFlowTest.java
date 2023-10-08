@@ -9,13 +9,14 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageObjects.RegistrationFormPage;
 
 import static constants.ConstantUrls.STELLAR_BURGER_LOGIN_PAGE;
+import static pageObjects.RegistrationFormPage.openRegistrationPage;
+import static pageObjects.RegistrationFormPage.registerUser;
 
 public class RegistrationFlowTest extends ConfigBrowser {
     WebDriver driver = ConfigBrowser.startDriver();
-RegistrationFormPage registrationFormPage = new RegistrationFormPage(driver);
+
 
 
 @Test
@@ -24,8 +25,8 @@ RegistrationFormPage registrationFormPage = new RegistrationFormPage(driver);
 
     CreateUser createUser = RegFormRandomData.getUserData();
 
-    registrationFormPage.openRegistrationPage();
-    registrationFormPage.registerUser(createUser);
+    openRegistrationPage();
+    registerUser(createUser);
     new  WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
 
     Assert.assertEquals(  STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
