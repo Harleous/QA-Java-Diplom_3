@@ -10,8 +10,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
+import pageObjects.BurgerHomePage;
 
-import static constants.LocatorsAndDataConstants.CHECKOUT_OREDER_BUTTON;
+import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
+import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
+import static pageObjects.AuthFormPage.*;
 
 public class EnterPersonalAccountTest {
     WebDriver driver = ConfigBrowser.startDriver();
@@ -29,10 +32,10 @@ public class EnterPersonalAccountTest {
                 .body("success", Matchers.equalTo(true))
                 .extract().jsonPath().get("accessToken");
 
-
-        AuthFormPage.authorize(createUser);
-        //new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGERS_HOME_PAGE));
-        boolean checkoutOrderButton = driver.findElement(CHECKOUT_OREDER_BUTTON).isDisplayed();
+        driver.get(STELLAR_BURGERS_HOME_PAGE);
+        BurgerHomePage.enterAccount();
+        authorize(createUser);
+        boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
     }
 @After

@@ -22,15 +22,16 @@ public class RegistrationFormPage extends BasePage {
     private final By passwordFieldInRegForm = By.xpath(".//fieldset[3]//input");
     // Кнопка "Зарегистрироваться"
     private final By registerButtonInRegForm = By.xpath(".//form/button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa' and text() = 'Зарегистрироваться']");
+private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
 
 
 
-    /*public RegistrationFormPage() {
-        super(driver);
-    }*/
 
-    public void openRegistrationPage(){
+    public static void openRegistrationPage(){
     driver.get(REGISTRATION_FORM_PAGE);
+}
+public static void clickEnterButtonInRegForm(){
+        driver.findElement(ENTER_BUTTON_IN_REGISTRATION_FORM).click();
 }
 
 
@@ -45,11 +46,6 @@ public class RegistrationFormPage extends BasePage {
         driver.findElement(passwordFieldInRegForm).sendKeys(createUser.getPassword());
 
         driver.findElement(registerButtonInRegForm).click();
-
-
-        /*driver.manage().timeouts().pageLoadTimeout(10000,
-                TimeUnit.MILLISECONDS);*/
-
 
 
     }

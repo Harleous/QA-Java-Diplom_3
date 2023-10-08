@@ -11,11 +11,11 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
 
-import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
 import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
-import static pageObjects.HeaderButtons.enterLoginPageWithLichniiKabinetButton;
+import static pageObjects.ForgotPasswordPage.clickEnterButtonInFogrotPasswordForm;
+import static pageObjects.ForgotPasswordPage.openForgotPasswordPage;
 
-public class EnterAccountWithLichniiKabinetButtonTest {
+public class EnterAccountFromEnterButtonInForgotPasswordForm {
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
     public static String accessToken;
@@ -31,8 +31,9 @@ public class EnterAccountWithLichniiKabinetButtonTest {
                 .body("success", Matchers.equalTo(true))
                 .extract().jsonPath().get("accessToken");
 
-        driver.get(STELLAR_BURGERS_HOME_PAGE);
-        enterLoginPageWithLichniiKabinetButton();
+
+        openForgotPasswordPage();
+        clickEnterButtonInFogrotPasswordForm();
         AuthFormPage.authorize(createUser);
 
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();

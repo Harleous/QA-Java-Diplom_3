@@ -11,11 +11,11 @@ public class BurgerHomePage extends BasePage {
 
     //ДОМАШНЯЯ СТРАНИЦА
     //кнопка «Войти в аккаунт»
-    private final By enterAccountButton = By.xpath(".//section[2]//button[text() = 'Войти в аккаунт']");
+    private static final By enterAccountButton = By.xpath(".//section[2]//button[text() = 'Войти в аккаунт']");
     //кнопка «Личный кабинет»
-    private final By personalAccountButton = By.cssSelector("a.AppHeader_header__link__3D_hX:nth-child(3) > p:nth-child(2)");
+    private static final By personalAccountButton = By.cssSelector("a.AppHeader_header__link__3D_hX:nth-child(3) > p:nth-child(2)");
 
-public void enterAccount (){
+public static void enterAccount(){
 
     driver.findElement(enterAccountButton).click();
 
