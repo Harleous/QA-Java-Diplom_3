@@ -33,7 +33,7 @@ public class EnterPersonalAccountTest {
                 .extract().jsonPath().get("accessToken");
 
         driver.get(STELLAR_BURGERS_HOME_PAGE);
-        BurgerHomePage.enterAccount();
+        BurgerHomePage.enterAccountButtonClick();
         authorize(createUser);
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
