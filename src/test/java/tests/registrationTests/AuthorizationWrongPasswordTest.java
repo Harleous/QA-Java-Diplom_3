@@ -3,6 +3,7 @@ package tests.registrationTests;
 import basePages.ConfigBrowser;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -28,9 +29,9 @@ public class AuthorizationWrongPasswordTest {
         boolean wrongPassMess = driver.findElement(WRONG_PASSWORD_MESSAGE).isDisplayed();
         Assert.assertTrue(wrongPassMess);
     }
-  /*  @After
+    @After
     public void quit(){
         driver.quit();
-    }*/
+    }
 
 }
