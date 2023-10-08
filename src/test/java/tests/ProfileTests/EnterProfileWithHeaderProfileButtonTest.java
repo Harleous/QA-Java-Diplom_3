@@ -1,4 +1,4 @@
-package tests.enterProfile;
+package tests.ProfileTests;
 
 import basePages.ConfigBrowser;
 import clients.UserClient;
