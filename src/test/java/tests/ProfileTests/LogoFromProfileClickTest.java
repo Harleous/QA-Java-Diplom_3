@@ -28,7 +28,6 @@ public class LogoFromProfileClickTest {
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
-
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
         openLoginPage();
@@ -36,17 +35,15 @@ public class LogoFromProfileClickTest {
         clickProfileButton();
         new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
         clickHeaderLogoButton();
+
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
-
     }
-
     @After
     public void tearDown() {
         driver.quit();
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-
     }
 }

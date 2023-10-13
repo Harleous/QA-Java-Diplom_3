@@ -4,10 +4,6 @@ public class CreateUser {
     private String name;
     public String email;
     public String password;
-
-
-
-
     public String getName() {
         return name;
     }

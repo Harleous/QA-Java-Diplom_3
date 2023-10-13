@@ -23,7 +23,6 @@ public class EnterAccountWithLichniiKabinetButtonTest {
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
-
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
         driver.get(STELLAR_BURGERS_HOME_PAGE);
@@ -33,13 +32,11 @@ public class EnterAccountWithLichniiKabinetButtonTest {
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
     }
-
     @After
     public void tearDown() {
         driver.quit();
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-
     }
 }

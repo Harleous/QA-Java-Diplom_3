@@ -14,18 +14,11 @@ import static constants.BrowserConstant.BROWSER_IN_USE;
 public class ConfigBrowser {
 
     public static WebDriver driver;
-   /* public static WebDriver startDriver() {
-
-        FirefoxOptions options = new FirefoxOptions();
-        driver = new FirefoxDriver(options);
-        return driver;
-    }*/
     public static WebDriver startDriver(){
         WebDriver driver = null;
         switch (BROWSER_IN_USE){
             case "Firefox" :
                 FirefoxOptions options = new FirefoxOptions();
-
                 driver = new FirefoxDriver(options);
                 break;
             case "Chrome" :
@@ -41,14 +34,9 @@ public class ConfigBrowser {
 
             default:
                 Assert.fail("Неправильное имя  браузера: " + BROWSER_IN_USE );
-
-
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().deleteAllCookies();
         return driver;
-
-
     }
 }

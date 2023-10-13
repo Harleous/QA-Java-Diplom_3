@@ -23,9 +23,7 @@ public class EnterAccountWithEnterButtonInRegFormTest {
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
-
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
-
 
         openRegistrationPage();
         clickEnterButtonInRegForm();
@@ -34,13 +32,11 @@ public class EnterAccountWithEnterButtonInRegFormTest {
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
     }
-
     @After
     public void tearDown() {
         driver.quit();
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-
     }
 }

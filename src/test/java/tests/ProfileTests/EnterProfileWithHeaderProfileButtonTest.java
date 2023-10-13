@@ -27,7 +27,6 @@ public class EnterProfileWithHeaderProfileButtonTest {
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
-
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
         openRegistrationPage();
@@ -37,16 +36,13 @@ public class EnterProfileWithHeaderProfileButtonTest {
         clickProfileButton();
         new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
 
-        Assert.assertEquals(  PROFILE_PAGE, driver.getCurrentUrl());
-
+        Assert.assertEquals(PROFILE_PAGE, driver.getCurrentUrl());
     }
-
     @After
     public void tearDown() {
         driver.quit();
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-
     }
 }

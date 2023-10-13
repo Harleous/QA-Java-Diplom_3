@@ -26,12 +26,12 @@ public class AuthorizationWrongPasswordTest {
         registrationFormPage.registerUser(createUser);
         driver.get(STELLAR_BURGER_LOGIN_PAGE);
         authFormPage.authWrongPassword(createUser);
+
         boolean wrongPassMess = driver.findElement(WRONG_PASSWORD_MESSAGE).isDisplayed();
         Assert.assertTrue(wrongPassMess);
     }
     @After
-    public void quit(){
+    public void quit() {
         driver.quit();
     }
-
 }

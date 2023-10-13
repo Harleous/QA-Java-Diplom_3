@@ -7,6 +7,7 @@ import io.restassured.response.ValidatableResponse;
 
 import static clients.BaseClient.getSpec;
 import static clients.BaseClient.getSpecAuth;
+import static clients.BaseConstants.*;
 import static io.restassured.RestAssured.given;
 
 public class UserClient {
@@ -17,7 +18,7 @@ public class UserClient {
                 .contentType(ContentType.JSON)
                 .body(createUser)
                 .when()
-                .post("/api/auth/register")
+                .post(CREATE_USER_ENDPOINT)
                 .then();
 
     }
@@ -26,7 +27,7 @@ public class UserClient {
                 .spec(getSpec())
                 .body(loginUser)
                 .when()
-                .post("/api/auth/login")
+                .post(LOGIN_USER_ENDPOINT)
                 .then();
 
     }
@@ -35,7 +36,7 @@ public class UserClient {
                 .spec(getSpecAuth(accessToken))
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("/api/auth/user")
+                .delete(DELETE_USER_ENDPOINT)
                 .then();
     }
 }

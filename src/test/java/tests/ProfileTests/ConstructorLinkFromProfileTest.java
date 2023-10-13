@@ -22,20 +22,18 @@ public class ConstructorLinkFromProfileTest {
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
     public static String accessToken;
-
     @Test
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
-
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
-
 
         openLoginPage();
         AuthFormPage.authorize(createUser);
         clickProfileButton();
         new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
         clickHeaderConstructorButton();
+
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
 
@@ -47,6 +45,5 @@ public class ConstructorLinkFromProfileTest {
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-
     }
 }

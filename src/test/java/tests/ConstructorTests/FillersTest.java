@@ -19,8 +19,6 @@ public class FillersTest {
     @Test
     public void enterPersonalAccountTest() {
 
-
-
         openHomePage();
         clickFillersButton();
         String actualClass = driver.findElement(FILLERS_BUTTON).getAttribute("class").toString();
@@ -30,6 +28,5 @@ public class FillersTest {
     @After
     public void tearDown() {
         driver.quit();
-
     }
 }

@@ -21,19 +21,18 @@ public class BunLinkTest {
     public void enterPersonalAccountTest() {
 
 
-
         openHomePage();
         clickSoucesButton();
-        new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(SOUCES_BUTTON,"class","tab_tab_type_current__2BEPc"));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(SOUCES_BUTTON, "class", "tab_tab_type_current__2BEPc"));
         clickBunButton();
-        new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(BUN_BUTTON,"class","tab_tab_type_current__2BEPc"));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.attributeContains(BUN_BUTTON, "class", "tab_tab_type_current__2BEPc"));
         String actualClass = driver.findElement(BUN_BUTTON).getAttribute("class").toString();
         Assert.assertTrue(actualClass.contains("tab_tab_type_current__2BEPc"));
 
     }
+
     @After
     public void tearDown() {
         driver.quit();
-
     }
 }

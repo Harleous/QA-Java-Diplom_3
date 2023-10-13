@@ -28,7 +28,6 @@ public class LogOutTest {
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
-
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
         openLoginPage();
@@ -36,18 +35,15 @@ public class LogOutTest {
         clickProfileButton();
         new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
         logOut();
-        new  WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
 
-        Assert.assertEquals(  STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
-
+        Assert.assertEquals(STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
     }
-
     @After
     public void tearDown() {
         driver.quit();
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-
     }
 }

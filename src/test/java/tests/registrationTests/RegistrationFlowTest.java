@@ -17,24 +17,20 @@ import static pageObjects.RegistrationFormPage.registerUser;
 
 public class RegistrationFlowTest extends ConfigBrowser {
     WebDriver driver = ConfigBrowser.startDriver();
+    RegistrationFormPage registrationFormPage = new RegistrationFormPage(driver);
+    @Test
+    public void registrationFlowOpensAuthorizationPageTest() {
 
-RegistrationFormPage registrationFormPage = new RegistrationFormPage(driver);
+        CreateUser createUser = RegFormRandomData.getUserData();
 
-@Test
-    public void registrationFlowOpensAuthorizationPageTest(){
+        openRegistrationPage();
+        registerUser(createUser);
+        new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
 
-
-    CreateUser createUser = RegFormRandomData.getUserData();
-
-    openRegistrationPage();
-    registerUser(createUser);
-    new  WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
-
-    Assert.assertEquals(  STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
-
-}
-@After
-    public void quit(){
-    driver.quit();
-}
+        Assert.assertEquals(STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
+    }
+    @After
+    public void quit() {
+        driver.quit();
+    }
 }

@@ -13,7 +13,6 @@ import static constants.LocatorsAndDataConstants.WRONG_PASSWORD_MESSAGE;
 
 public class AuthFormPage extends BasePage {
 
-
     //ФОРМА АВТОРИЗАЦИИ
     //кнопка  "Восстановить пароль"
     private final By passwordRecoveryFormEnterButton = By.xpath(".//div/p/a[@class = 'Auth_link__1fOlj' and text() = 'Войти']");
@@ -25,37 +24,32 @@ public class AuthFormPage extends BasePage {
     private static final By authFormPass = By.xpath("//input[@name='Пароль']");
     //поле Password формы авторизации
     private static final By EnterButtonInAuthForm = By.xpath("//button[contains(text(),'Войти')]");
-//message при введении некорректного пароля
+    //message при введении некорректного пароля
     private final By wrongPasswordMessage = WRONG_PASSWORD_MESSAGE;
 
     public AuthFormPage(WebDriver driver) {
         super(driver);
     }
 
-    public static void openLoginPage(){
+    public static void openLoginPage() {
         driver.get(STELLAR_BURGER_LOGIN_PAGE);
     }
 
+    public static void authorize(CreateUser createUser) {
 
-    public static void authorize(CreateUser createUser){
+        String email = createUser.getEmail();
+        String password = createUser.getPassword();
 
+        driver.findElement(authFormEmail).sendKeys(email);
+        driver.findElement(authFormPass).sendKeys(password);
+        driver.findElement(EnterButtonInAuthForm).click();
+    }
 
-String email = createUser.getEmail();
-String password = createUser.getPassword();
-
-
-    driver.findElement(authFormEmail).sendKeys(email);
-
-    driver.findElement(authFormPass).sendKeys(password);
-
-    driver.findElement(EnterButtonInAuthForm).click();
-
-}
-    public void authWrongPassword(CreateUser createUser){
-
+    public void authWrongPassword(CreateUser createUser) {
 
         String email = createUser.getEmail();
         String password = WRONG_PASSWORD;
+
         driver.findElement(authFormEmail).sendKeys(email);
 
         driver.findElement(authFormPass).sendKeys(password);
