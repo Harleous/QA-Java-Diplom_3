@@ -1,6 +1,6 @@
 package pageObjects;
 
-import basePages.BasePage;
+import base.pages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,7 +8,7 @@ import static constants.ConstantUrls.FORGOT_PASSWORD_PAGE;
 
 public class ForgotPasswordPage extends BasePage {
 
-    public static final By ENTER_ACCOUNT_BUTTON_IN_FORGOT_PASSWORD_FORM = By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
+    public static final By ENTER_ACCOUNT_BUTTON_IN_FORGOT_PASSWORD_FORM = By.className("Auth_link__1fOlj");
 
     public ForgotPasswordPage(WebDriver driver) {
         super(driver);

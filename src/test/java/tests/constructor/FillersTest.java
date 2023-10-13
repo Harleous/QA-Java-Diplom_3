@@ -1,6 +1,6 @@
-package tests.ConstructorTests;
+package tests.constructor;
 
-import basePages.ConfigBrowser;
+import base.pages.ConfigBrowser;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;

@@ -1,9 +1,9 @@
-package tests.ProfileTests;
+package tests.profile;
 
-import basePages.ConfigBrowser;
+import base.pages.ConfigBrowser;
 import clients.UserClient;
-import dataProvider.CreateUser;
-import dataProvider.RegFormRandomData;
+import data.provider.CreateUser;
+import data.provider.RegFormRandomData;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -14,19 +14,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.AuthFormPage;
 
 import static constants.ConstantUrls.PROFILE_PAGE;
-import static constants.ConstantUrls.STELLAR_BURGER_LOGIN_PAGE;
+import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
 import static pageObjects.AuthFormPage.authorize;
 import static pageObjects.AuthFormPage.openLoginPage;
+import static pageObjects.HeaderButtons.clickHeaderLogoButton;
 import static pageObjects.HeaderButtons.clickProfileButton;
-import static pageObjects.ProfilePage.logOut;
 
-public class LogOutTest {
+public class LogoFromProfileClickTest {
     public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
 
     @Test
-    @DisplayName("Выход из аккаунта по кнопке «Выйти» в личном кабинете")
+    @DisplayName("Переход по клику на логотип Stellar Burgers")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
@@ -36,10 +36,10 @@ public class LogOutTest {
         authorize(createUser);
         clickProfileButton();
         new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
-        logOut();
-        new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
+        clickHeaderLogoButton();
 
-        Assert.assertEquals(STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
+        boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
+        Assert.assertTrue(checkoutOrderButton);
     }
 
     @After

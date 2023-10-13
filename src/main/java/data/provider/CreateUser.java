@@ -1,4 +1,4 @@
-package dataProvider;
+package data.provider;
 
 public class CreateUser {
     public String email;

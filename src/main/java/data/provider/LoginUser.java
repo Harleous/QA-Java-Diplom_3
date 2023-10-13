@@ -1,4 +1,4 @@
-package dataProvider;
+package data.provider;
 
 public class LoginUser {
     private String email;

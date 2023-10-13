@@ -1,7 +1,7 @@
 package pageObjects;
 
-import basePages.BasePage;
-import dataProvider.CreateUser;
+import base.pages.BasePage;
+import data.provider.CreateUser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -17,8 +17,8 @@ public class RegistrationFormPage extends BasePage {
     //поле ввода "Пароль"
     private static final By passwordFieldInRegForm = By.xpath(".//fieldset[3]//input");
     // Кнопка "Зарегистрироваться"
-    private static final By registerButtonInRegForm = By.xpath(".//form/button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa' and text() = 'Зарегистрироваться']");
-    private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = org.openqa.selenium.By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
+    private static final By registerButtonInRegForm = By.cssSelector(".button_button__33qZ0");
+    private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = By.cssSelector(".Auth_link__1fOlj");
     public RegistrationFormPage(WebDriver driver) {
         super(driver);
     }

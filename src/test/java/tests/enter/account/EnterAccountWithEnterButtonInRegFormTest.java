@@ -1,9 +1,9 @@
-package tests.enterPersonalAccountTests;
+package tests.enter.account;
 
-import basePages.ConfigBrowser;
+import base.pages.ConfigBrowser;
 import clients.UserClient;
-import dataProvider.CreateUser;
-import dataProvider.RegFormRandomData;
+import data.provider.CreateUser;
+import data.provider.RegFormRandomData;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -11,24 +11,24 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
 
-import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
 import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
-import static pageObjects.HeaderButtons.clickProfileButton;
+import static pageObjects.RegistrationFormPage.clickEnterButtonInRegForm;
+import static pageObjects.RegistrationFormPage.openRegistrationPage;
 
-public class EnterAccountWithLichniiKabinetButtonTest {
+public class EnterAccountWithEnterButtonInRegFormTest {
     public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
 
     @Test
-    @DisplayName("Вход через кнопку «Личный кабинет»")
+    @DisplayName("Вход в аккаунт через кнопку Войти в форме регистрации")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
-        driver.get(STELLAR_BURGERS_HOME_PAGE);
-        clickProfileButton();
+        openRegistrationPage();
+        clickEnterButtonInRegForm();
         AuthFormPage.authorize(createUser);
 
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();

@@ -1,9 +1,9 @@
-package tests.ProfileTests;
+package tests.profile;
 
-import basePages.ConfigBrowser;
+import base.pages.ConfigBrowser;
 import clients.UserClient;
-import dataProvider.CreateUser;
-import dataProvider.RegFormRandomData;
+import data.provider.CreateUser;
+import data.provider.RegFormRandomData;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -14,31 +14,32 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.AuthFormPage;
 
 import static constants.ConstantUrls.PROFILE_PAGE;
+import static constants.ConstantUrls.STELLAR_BURGER_LOGIN_PAGE;
+import static pageObjects.AuthFormPage.authorize;
 import static pageObjects.AuthFormPage.openLoginPage;
 import static pageObjects.HeaderButtons.clickProfileButton;
-import static pageObjects.RegistrationFormPage.openRegistrationPage;
-import static pageObjects.RegistrationFormPage.registerUser;
+import static pageObjects.ProfilePage.logOut;
 
-public class EnterProfileWithHeaderProfileButtonTest {
+public class LogOutTest {
     public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
 
     @Test
-    @DisplayName("Переход по клику на «Личный кабинет»")
+    @DisplayName("Выход из аккаунта по кнопке «Выйти» в личном кабинете")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
-        openRegistrationPage();
-        registerUser(createUser);
         openLoginPage();
-        AuthFormPage.authorize(createUser);
+        authorize(createUser);
         clickProfileButton();
         new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
+        logOut();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(STELLAR_BURGER_LOGIN_PAGE));
 
-        Assert.assertEquals(PROFILE_PAGE, driver.getCurrentUrl());
+        Assert.assertEquals(STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
     }
 
     @After

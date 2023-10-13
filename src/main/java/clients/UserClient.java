@@ -1,7 +1,7 @@
 package clients;
 
-import dataProvider.CreateUser;
-import dataProvider.LoginUser;
+import data.provider.CreateUser;
+import data.provider.LoginUser;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 

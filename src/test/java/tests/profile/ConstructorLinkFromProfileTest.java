@@ -1,39 +1,45 @@
-package tests.enterPersonalAccountTests;
+package tests.profile;
 
-import basePages.ConfigBrowser;
+import base.pages.ConfigBrowser;
 import clients.UserClient;
-import dataProvider.CreateUser;
-import dataProvider.RegFormRandomData;
+import data.provider.CreateUser;
+import data.provider.RegFormRandomData;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.AuthFormPage;
-import pageObjects.BurgerHomePage;
 
-import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
+import static constants.ConstantUrls.PROFILE_PAGE;
 import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
-import static pageObjects.AuthFormPage.authorize;
+import static pageObjects.AuthFormPage.openLoginPage;
+import static pageObjects.HeaderButtons.clickHeaderConstructorButton;
+import static pageObjects.HeaderButtons.clickProfileButton;
 
-public class EnterPersonalAccountTest {
+public class ConstructorLinkFromProfileTest {
     public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
 
     @Test
-    @DisplayName("Вход по кнопке «Войти в аккаунт» на главной")
+    @DisplayName("Переход из личного кабинета в конструктор")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
-        driver.get(STELLAR_BURGERS_HOME_PAGE);
-        BurgerHomePage.enterAccountButtonClick();
-        authorize(createUser);
+        openLoginPage();
+        AuthFormPage.authorize(createUser);
+        clickProfileButton();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.urlToBe(PROFILE_PAGE));
+        clickHeaderConstructorButton();
 
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
+
     }
 
     @After

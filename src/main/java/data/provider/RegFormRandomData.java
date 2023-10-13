@@ -1,4 +1,4 @@
-package dataProvider;
+package data.provider;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
