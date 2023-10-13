@@ -13,17 +13,17 @@ import static constants.LocatorsAndDataConstants.WRONG_PASSWORD_MESSAGE;
 
 public class AuthFormPage extends BasePage {
 
-    //ФОРМА АВТОРИЗАЦИИ
-    //кнопка  "Восстановить пароль"
-    private final By passwordRecoveryFormEnterButton = By.xpath(".//div/p/a[@class = 'Auth_link__1fOlj' and text() = 'Войти']");
-    //кнопка "Зарегистрироваться"
-    private final By registrationButtonInAUthForm = By.xpath(".//div/p[1]/a[@class = 'Auth_link__1fOlj' and text() = 'Зарегистрироваться']");
     //поле Name формы авторизации
     private static final By authFormEmail = By.xpath("//input[@name='name']");
     //поле Email формы авторизации
     private static final By authFormPass = By.xpath("//input[@name='Пароль']");
     //поле Password формы авторизации
     private static final By EnterButtonInAuthForm = By.xpath("//button[contains(text(),'Войти')]");
+    //ФОРМА АВТОРИЗАЦИИ
+    //кнопка  "Восстановить пароль"
+    private final By passwordRecoveryFormEnterButton = By.xpath(".//div/p/a[@class = 'Auth_link__1fOlj' and text() = 'Войти']");
+    //кнопка "Зарегистрироваться"
+    private final By registrationButtonInAUthForm = By.xpath(".//div/p[1]/a[@class = 'Auth_link__1fOlj' and text() = 'Зарегистрироваться']");
     //message при введении некорректного пароля
     private final By wrongPasswordMessage = WRONG_PASSWORD_MESSAGE;
 

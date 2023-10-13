@@ -9,10 +9,6 @@ import static constants.ConstantUrls.REGISTRATION_FORM_PAGE;
 
 
 public class RegistrationFormPage extends BasePage {
-    public RegistrationFormPage(WebDriver driver) {
-        super(driver);
-    }
-
     // ФОРМА РЕГИСТРАЦИИ
     //Поле ввода "Имя"
     private static final By nameFieldInRegForm = org.openqa.selenium.By.xpath(".//fieldset[1]//input");
@@ -22,32 +18,25 @@ public class RegistrationFormPage extends BasePage {
     private static final By passwordFieldInRegForm = By.xpath(".//fieldset[3]//input");
     // Кнопка "Зарегистрироваться"
     private static final By registerButtonInRegForm = By.xpath(".//form/button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa' and text() = 'Зарегистрироваться']");
-private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = org.openqa.selenium.By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
-
-
-
-
-    public static void openRegistrationPage(){
-    driver.get(REGISTRATION_FORM_PAGE);
-}
-public static void clickEnterButtonInRegForm(){
+    private static final By ENTER_BUTTON_IN_REGISTRATION_FORM = org.openqa.selenium.By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
+    public RegistrationFormPage(WebDriver driver) {
+        super(driver);
+    }
+    public static void openRegistrationPage() {
+        driver.get(REGISTRATION_FORM_PAGE);
+    }
+    public static void clickEnterButtonInRegForm() {
         driver.findElement(ENTER_BUTTON_IN_REGISTRATION_FORM).click();
-}
-
-
+    }
     public static void registerUser(CreateUser createUser) {
-
 
         driver.findElement(nameFieldInRegForm).sendKeys(createUser.getName());
 
         driver.findElement(emailFieldInRegForm).sendKeys(createUser.getEmail());
 
-
         driver.findElement(passwordFieldInRegForm).sendKeys(createUser.getPassword());
 
         driver.findElement(registerButtonInRegForm).click();
-
-
     }
 }
 

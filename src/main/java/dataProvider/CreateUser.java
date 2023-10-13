@@ -1,9 +1,10 @@
 package dataProvider;
 
 public class CreateUser {
-    private String name;
     public String email;
     public String password;
+    private String name;
+
     public String getName() {
         return name;
     }

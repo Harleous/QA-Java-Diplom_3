@@ -1,30 +1,32 @@
 package dataProvider;
 
 public class LoginUser {
-        private String email;
-        private String password;
-        public LoginUser(String email, String password) {
-            this.email = email;
-            this.password = password;
-        }
-        public String getEmail() {
-            return email;
-        }
+    private String email;
+    private String password;
 
-        public void setEmail(String email) {
-            this.email = email;
-        }
+    public LoginUser(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 
-        public String getPassword() {
-            return password;
-        }
+    public static LoginUser fromCreateUserData(CreateUser createUser) {
 
-        public void setPassword(String password) {
-            this.password = password;
-        }
+        return new LoginUser(createUser.getEmail(), createUser.getPassword());
+    }
 
-        public static LoginUser fromCreateUserData(CreateUser createUser){
+    public String getEmail() {
+        return email;
+    }
 
-            return new LoginUser(createUser.getEmail(), createUser.getPassword());
-        }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

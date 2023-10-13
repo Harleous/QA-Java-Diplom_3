@@ -4,6 +4,7 @@ import basePages.ConfigBrowser;
 import clients.UserClient;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,11 +16,12 @@ import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
 import static pageObjects.HeaderButtons.clickProfileButton;
 
 public class EnterAccountWithLichniiKabinetButtonTest {
+    public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
-    public static String accessToken;
 
     @Test
+    @DisplayName("Вход через кнопку «Личный кабинет»")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
@@ -32,6 +34,7 @@ public class EnterAccountWithLichniiKabinetButtonTest {
         boolean checkoutOrderButton = driver.findElement(CHECKOUT_ORDER_BUTTON).isDisplayed();
         Assert.assertTrue(checkoutOrderButton);
     }
+
     @After
     public void tearDown() {
         driver.quit();

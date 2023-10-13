@@ -4,6 +4,7 @@ import basePages.ConfigBrowser;
 import clients.UserClient;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,11 +21,12 @@ import static pageObjects.HeaderButtons.clickProfileButton;
 import static pageObjects.ProfilePage.logOut;
 
 public class LogOutTest {
+    public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
-    public static String accessToken;
 
     @Test
+    @DisplayName("Выход из аккаунта по кнопке «Выйти» в личном кабинете")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
@@ -39,6 +41,7 @@ public class LogOutTest {
 
         Assert.assertEquals(STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
     }
+
     @After
     public void tearDown() {
         driver.quit();

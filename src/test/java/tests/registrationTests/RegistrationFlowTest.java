@@ -3,6 +3,7 @@ package tests.registrationTests;
 import basePages.ConfigBrowser;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,7 +19,9 @@ import static pageObjects.RegistrationFormPage.registerUser;
 public class RegistrationFlowTest extends ConfigBrowser {
     WebDriver driver = ConfigBrowser.startDriver();
     RegistrationFormPage registrationFormPage = new RegistrationFormPage(driver);
+
     @Test
+    @DisplayName("Регистрация нового пользователя")
     public void registrationFlowOpensAuthorizationPageTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
@@ -29,6 +32,7 @@ public class RegistrationFlowTest extends ConfigBrowser {
 
         Assert.assertEquals(STELLAR_BURGER_LOGIN_PAGE, driver.getCurrentUrl());
     }
+
     @After
     public void quit() {
         driver.quit();

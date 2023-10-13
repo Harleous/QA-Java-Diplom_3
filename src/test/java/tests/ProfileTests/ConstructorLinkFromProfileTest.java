@@ -4,6 +4,7 @@ import basePages.ConfigBrowser;
 import clients.UserClient;
 import dataProvider.CreateUser;
 import dataProvider.RegFormRandomData;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -19,10 +20,12 @@ import static pageObjects.HeaderButtons.clickHeaderConstructorButton;
 import static pageObjects.HeaderButtons.clickProfileButton;
 
 public class ConstructorLinkFromProfileTest {
+    public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
-    public static String accessToken;
+
     @Test
+    @DisplayName("Переход из личного кабинета в конструктор")
     public void enterPersonalAccountTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
