@@ -22,7 +22,7 @@ public class EnterAccountWithEnterButtonInRegFormTest {
 
     @Test
     @DisplayName("Вход в аккаунт через кнопку Войти в форме регистрации")
-    public void enterPersonalAccountTest() {
+    public void enterPersonalAccountFromRegFormTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");

@@ -1,12 +1,12 @@
 {
-  "uid" : "e2dca57afee38a01",
-  "name" : "enterPersonalAccountTest",
-  "fullName" : "tests.enterPersonalAccountTests.EnterAccountWithEnterButtonInRegFormTest.enterPersonalAccountTest",
-  "historyId" : "7a69d018c3eb4ee3ffc135ef24b2b1fa",
+  "uid" : "3fbc627aec2d457f",
+  "name" : "Вход через кнопку «Личный кабинет»",
+  "fullName" : "tests.enter.account.EnterAccountWithLichniiKabinetButtonTest.enterPersonalAccountWithProfileButtonTest",
+  "historyId" : "f257a430cef948068db8df12d31d7fe0",
   "time" : {
-    "start" : 1696784847923,
-    "stop" : 1696784861583,
-    "duration" : 13660
+    "start" : 1697474166504,
+    "stop" : 1697474171498,
+    "duration" : 4994
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.enterPersonalAccountTests"
+    "value" : "tests.enter.account"
   }, {
     "name" : "testClass",
-    "value" : "tests.enterPersonalAccountTests.EnterAccountWithEnterButtonInRegFormTest"
+    "value" : "tests.enter.account.EnterAccountWithLichniiKabinetButtonTest"
   }, {
     "name" : "testMethod",
-    "value" : "enterPersonalAccountTest"
+    "value" : "enterPersonalAccountWithProfileButtonTest"
   }, {
     "name" : "suite",
-    "value" : "tests.enterPersonalAccountTests.EnterAccountWithEnterButtonInRegFormTest"
+    "value" : "tests.enter.account.EnterAccountWithLichniiKabinetButtonTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e2dca57afee38a01.json",
+  "source" : "3fbc627aec2d457f.json",
   "parameterValues" : [ ]
 }

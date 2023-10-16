@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
 
-import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
 import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
+import static pageObjects.BurgerHomePage.openHomePage;
 import static pageObjects.HeaderButtons.clickProfileButton;
 
 public class EnterAccountWithLichniiKabinetButtonTest {
@@ -22,12 +22,12 @@ public class EnterAccountWithLichniiKabinetButtonTest {
 
     @Test
     @DisplayName("Вход через кнопку «Личный кабинет»")
-    public void enterPersonalAccountTest() {
+    public void enterPersonalAccountWithProfileButtonTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
-        driver.get(STELLAR_BURGERS_HOME_PAGE);
+        openHomePage();
         clickProfileButton();
         AuthFormPage.authorize(createUser);
 

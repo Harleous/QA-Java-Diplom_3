@@ -27,7 +27,7 @@ public class LogOutTest {
 
     @Test
     @DisplayName("Выход из аккаунта по кнопке «Выйти» в личном кабинете")
-    public void enterPersonalAccountTest() {
+    public void logOutFromProfileTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");

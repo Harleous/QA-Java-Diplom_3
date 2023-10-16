@@ -1,12 +1,12 @@
 {
-  "uid" : "6393f830c2f16c31",
-  "name" : "enterPersonalAccountTest",
-  "fullName" : "tests.ProfileTests.LogoFromProfileClickTest.enterPersonalAccountTest",
-  "historyId" : "ace36d23b6eb2797b2c1955c67d14882",
+  "uid" : "6741789ab6a5f76d",
+  "name" : "Вход по кнопке «Войти в аккаунт» на главной",
+  "fullName" : "tests.enter.account.EnterPersonalAccountTest.enterPersonalAccountTest",
+  "historyId" : "10494df2e233c98648f5963f20dcf9fb",
   "time" : {
-    "start" : 1696784900715,
-    "stop" : 1696784921025,
-    "duration" : 20310
+    "start" : 1697474171501,
+    "stop" : 1697474175773,
+    "duration" : 4272
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.ProfileTests"
+    "value" : "tests.enter.account"
   }, {
     "name" : "testClass",
-    "value" : "tests.ProfileTests.LogoFromProfileClickTest"
+    "value" : "tests.enter.account.EnterPersonalAccountTest"
   }, {
     "name" : "testMethod",
     "value" : "enterPersonalAccountTest"
   }, {
     "name" : "suite",
-    "value" : "tests.ProfileTests.LogoFromProfileClickTest"
+    "value" : "tests.enter.account.EnterPersonalAccountTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6393f830c2f16c31.json",
+  "source" : "6741789ab6a5f76d.json",
   "parameterValues" : [ ]
 }

@@ -1,7 +1,7 @@
 package pageObjects;
 
-import basePages.BasePage;
-import dataProvider.CreateUser;
+import base.pages.BasePage;
+import data.provider.CreateUser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;

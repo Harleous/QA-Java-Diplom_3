@@ -1,12 +1,12 @@
 {
-  "uid" : "ef6afe167981ef91",
-  "name" : "registrationFlowOpensAuthorizationPageTest",
-  "fullName" : "tests.registrationTests.RegistrationFlowTest.registrationFlowOpensAuthorizationPageTest",
-  "historyId" : "f9aa02c2af44006e8bcaa15c841bb75d",
+  "uid" : "bf78e61e2b4b9055",
+  "name" : "Вход в аккаунт через кнопку Войти в форме регистрации",
+  "fullName" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest.enterPersonalAccountFromRegFormTest",
+  "historyId" : "9706c6e3747cd2fef750edf7c18f3070",
   "time" : {
-    "start" : 1696784937563,
-    "stop" : 1696784942202,
-    "duration" : 4639
+    "start" : 1697474156729,
+    "stop" : 1697474166504,
+    "duration" : 9775
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.registrationTests"
+    "value" : "tests.enter.account"
   }, {
     "name" : "testClass",
-    "value" : "tests.registrationTests.RegistrationFlowTest"
+    "value" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest"
   }, {
     "name" : "testMethod",
-    "value" : "registrationFlowOpensAuthorizationPageTest"
+    "value" : "enterPersonalAccountFromRegFormTest"
   }, {
     "name" : "suite",
-    "value" : "tests.registrationTests.RegistrationFlowTest"
+    "value" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ef6afe167981ef91.json",
+  "source" : "bf78e61e2b4b9055.json",
   "parameterValues" : [ ]
 }

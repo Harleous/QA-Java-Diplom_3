@@ -27,7 +27,7 @@ public class LogoFromProfileClickTest {
 
     @Test
     @DisplayName("Переход по клику на логотип Stellar Burgers")
-    public void enterPersonalAccountTest() {
+    public void clickLogoFromProfileTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");

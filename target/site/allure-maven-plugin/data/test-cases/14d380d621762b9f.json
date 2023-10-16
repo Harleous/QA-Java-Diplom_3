@@ -1,12 +1,12 @@
 {
-  "uid" : "997874abdebd0753",
-  "name" : "enterPersonalAccountTest",
-  "fullName" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest.enterPersonalAccountTest",
-  "historyId" : "cf508d6b17780b0cfd51e4ab0afb6144",
+  "uid" : "14d380d621762b9f",
+  "name" : "Выход из аккаунта по кнопке «Выйти» в личном кабинете",
+  "fullName" : "tests.profile.LogOutTest.logOutFromProfileTest",
+  "historyId" : "34c69390d712ff7c0e276e0d137cee69",
   "time" : {
-    "start" : 1696784861583,
-    "stop" : 1696784874873,
-    "duration" : 13290
+    "start" : 1697474191300,
+    "stop" : 1697474196597,
+    "duration" : 5297
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.enterPersonalAccountTests"
+    "value" : "tests.profile"
   }, {
     "name" : "testClass",
-    "value" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest"
+    "value" : "tests.profile.LogOutTest"
   }, {
     "name" : "testMethod",
-    "value" : "enterPersonalAccountTest"
+    "value" : "logOutFromProfileTest"
   }, {
     "name" : "suite",
-    "value" : "tests.enterPersonalAccountTests.EnterAccountWithLichniiKabinetButtonTest"
+    "value" : "tests.profile.LogOutTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "997874abdebd0753.json",
+  "source" : "14d380d621762b9f.json",
   "parameterValues" : [ ]
 }

@@ -1,4 +1,4 @@
-package basePages;
+package base.pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;

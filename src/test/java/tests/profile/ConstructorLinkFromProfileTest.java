@@ -26,7 +26,7 @@ public class ConstructorLinkFromProfileTest {
 
     @Test
     @DisplayName("Переход из личного кабинета в конструктор")
-    public void enterPersonalAccountTest() {
+    public void enterConstructorFromProfileTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");

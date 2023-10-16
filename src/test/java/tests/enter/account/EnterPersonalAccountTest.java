@@ -12,9 +12,9 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
 import pageObjects.BurgerHomePage;
 
-import static constants.ConstantUrls.STELLAR_BURGERS_HOME_PAGE;
 import static constants.LocatorsAndDataConstants.CHECKOUT_ORDER_BUTTON;
 import static pageObjects.AuthFormPage.authorize;
+import static pageObjects.BurgerHomePage.openHomePage;
 
 public class EnterPersonalAccountTest {
     public static String accessToken;
@@ -28,7 +28,7 @@ public class EnterPersonalAccountTest {
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
 
-        driver.get(STELLAR_BURGERS_HOME_PAGE);
+        openHomePage();
         BurgerHomePage.enterAccountButtonClick();
         authorize(createUser);
 

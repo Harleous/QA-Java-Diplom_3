@@ -16,7 +16,7 @@ import static constants.ConstantUrls.STELLAR_BURGER_LOGIN_PAGE;
 import static pageObjects.RegistrationFormPage.openRegistrationPage;
 import static pageObjects.RegistrationFormPage.registerUser;
 
-public class RegistrationFlowTest extends ConfigBrowser {
+public class RegistrationFlowTest  {
     WebDriver driver = ConfigBrowser.startDriver();
     RegistrationFormPage registrationFormPage = new RegistrationFormPage(driver);
 

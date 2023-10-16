@@ -1,12 +1,12 @@
 {
-  "uid" : "975320a57f2f9150",
-  "name" : "enterPersonalAccountTest",
-  "fullName" : "tests.ConstructorTests.FillersTest.enterPersonalAccountTest",
-  "historyId" : "a3ca61b3517e2e249014767ea8bc034c",
+  "uid" : "47f537f9e2bd286f",
+  "name" : "Проверка работы перехода к разделу Соусы в Конструкторе",
+  "fullName" : "tests.constructor.SoucesLinkTest.switchToSoucesTest",
+  "historyId" : "8026a24228ad35b6269069d25dad31d8",
   "time" : {
-    "start" : 1696784832995,
-    "stop" : 1696784837264,
-    "duration" : 4269
+    "start" : 1697474150999,
+    "stop" : 1697474156724,
+    "duration" : 5725
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.ConstructorTests"
+    "value" : "tests.constructor"
   }, {
     "name" : "testClass",
-    "value" : "tests.ConstructorTests.FillersTest"
+    "value" : "tests.constructor.SoucesLinkTest"
   }, {
     "name" : "testMethod",
-    "value" : "enterPersonalAccountTest"
+    "value" : "switchToSoucesTest"
   }, {
     "name" : "suite",
-    "value" : "tests.ConstructorTests.FillersTest"
+    "value" : "tests.constructor.SoucesLinkTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "975320a57f2f9150.json",
+  "source" : "47f537f9e2bd286f.json",
   "parameterValues" : [ ]
 }

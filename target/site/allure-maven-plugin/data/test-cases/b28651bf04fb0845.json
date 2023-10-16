@@ -1,12 +1,12 @@
 {
-  "uid" : "88db79e6a07efb9c",
-  "name" : "enterPersonalAccountTest",
-  "fullName" : "tests.ProfileTests.ConstructorLinkFromProfileTest.enterPersonalAccountTest",
-  "historyId" : "fa6b566cf7c3de9d89f2be51eabc2d5d",
+  "uid" : "b28651bf04fb0845",
+  "name" : "Авторизация с неправильным паролем",
+  "fullName" : "tests.registration.AuthorizationWrongPasswordTest.authorizationWithWrongPasswordFails",
+  "historyId" : "f22e02eb1ac388cb65279c5b076a54e8",
   "time" : {
-    "start" : 1696784883822,
-    "stop" : 1696784889115,
-    "duration" : 5293
+    "start" : 1697474196601,
+    "stop" : 1697474200311,
+    "duration" : 3710
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.ProfileTests"
+    "value" : "tests.registration"
   }, {
     "name" : "testClass",
-    "value" : "tests.ProfileTests.ConstructorLinkFromProfileTest"
+    "value" : "tests.registration.AuthorizationWrongPasswordTest"
   }, {
     "name" : "testMethod",
-    "value" : "enterPersonalAccountTest"
+    "value" : "authorizationWithWrongPasswordFails"
   }, {
     "name" : "suite",
-    "value" : "tests.ProfileTests.ConstructorLinkFromProfileTest"
+    "value" : "tests.registration.AuthorizationWrongPasswordTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "88db79e6a07efb9c.json",
+  "source" : "b28651bf04fb0845.json",
   "parameterValues" : [ ]
 }

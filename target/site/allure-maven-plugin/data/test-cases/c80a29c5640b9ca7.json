@@ -1,12 +1,12 @@
 {
-  "uid" : "3dd62a5e1fe847a6",
-  "name" : "enterPersonalAccountTest",
-  "fullName" : "tests.ProfileTests.LogOutTest.enterPersonalAccountTest",
-  "historyId" : "5feae4103d40a66cdd734006778ce4ee",
+  "uid" : "c80a29c5640b9ca7",
+  "name" : "Проверка работы перехода к разделу Булка в конструкторе",
+  "fullName" : "tests.constructor.BunLinkTest.switchToBunTest",
+  "historyId" : "b25c8844e3795cb910488bf3ba311c3d",
   "time" : {
-    "start" : 1696784921025,
-    "stop" : 1696784929028,
-    "duration" : 8003
+    "start" : 1697474139430,
+    "stop" : 1697474146861,
+    "duration" : 7431
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.ProfileTests"
+    "value" : "tests.constructor"
   }, {
     "name" : "testClass",
-    "value" : "tests.ProfileTests.LogOutTest"
+    "value" : "tests.constructor.BunLinkTest"
   }, {
     "name" : "testMethod",
-    "value" : "enterPersonalAccountTest"
+    "value" : "switchToBunTest"
   }, {
     "name" : "suite",
-    "value" : "tests.ProfileTests.LogOutTest"
+    "value" : "tests.constructor.BunLinkTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3dd62a5e1fe847a6.json",
+  "source" : "c80a29c5640b9ca7.json",
   "parameterValues" : [ ]
 }

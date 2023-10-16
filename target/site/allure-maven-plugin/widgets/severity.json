@@ -1,120 +1,120 @@
 [ {
-  "uid" : "a4908f0d77ee4e5f",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "bde6446490dfb974",
+  "name" : "Переход по клику на логотип Stellar Burgers",
   "time" : {
-    "start" : 1696784889115,
-    "stop" : 1696784900699,
-    "duration" : 11584
+    "start" : 1697474186035,
+    "stop" : 1697474191295,
+    "duration" : 5260
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ce4aead192c2c922",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "e1d44fa03a44f298",
+  "name" : "Проверка работы перехода к разделу Начинка в Конструкторе",
   "time" : {
-    "start" : 1696784837264,
-    "stop" : 1696784847923,
-    "duration" : 10659
+    "start" : 1697474146964,
+    "stop" : 1697474150995,
+    "duration" : 4031
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f270e8f85a9d93b",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "b28651bf04fb0845",
+  "name" : "Авторизация с неправильным паролем",
   "time" : {
-    "start" : 1696784874873,
-    "stop" : 1696784883806,
-    "duration" : 8933
+    "start" : 1697474196601,
+    "stop" : 1697474200311,
+    "duration" : 3710
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "997874abdebd0753",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "de259135b169c14d",
+  "name" : "Переход по клику на «Личный кабинет»",
   "time" : {
-    "start" : 1696784861583,
-    "stop" : 1696784874873,
-    "duration" : 13290
+    "start" : 1697474180648,
+    "stop" : 1697474186031,
+    "duration" : 5383
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ef6afe167981ef91",
-  "name" : "registrationFlowOpensAuthorizationPageTest",
+  "uid" : "c0d2e5bc9cef231d",
+  "name" : "Переход из личного кабинета в конструктор",
   "time" : {
-    "start" : 1696784937563,
-    "stop" : 1696784942202,
-    "duration" : 4639
+    "start" : 1697474175773,
+    "stop" : 1697474180646,
+    "duration" : 4873
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5f77091a5270ca53",
-  "name" : "authorizationWithWrongPasswordFails",
+  "uid" : "14d380d621762b9f",
+  "name" : "Выход из аккаунта по кнопке «Выйти» в личном кабинете",
   "time" : {
-    "start" : 1696784929028,
-    "stop" : 1696784937554,
-    "duration" : 8526
+    "start" : 1697474191300,
+    "stop" : 1697474196597,
+    "duration" : 5297
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3dd62a5e1fe847a6",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "6741789ab6a5f76d",
+  "name" : "Вход по кнопке «Войти в аккаунт» на главной",
   "time" : {
-    "start" : 1696784921025,
-    "stop" : 1696784929028,
-    "duration" : 8003
+    "start" : 1697474171501,
+    "stop" : 1697474175773,
+    "duration" : 4272
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6393f830c2f16c31",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "3fbc627aec2d457f",
+  "name" : "Вход через кнопку «Личный кабинет»",
   "time" : {
-    "start" : 1696784900715,
-    "stop" : 1696784921025,
-    "duration" : 20310
+    "start" : 1697474166504,
+    "stop" : 1697474171498,
+    "duration" : 4994
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2fa44a0138ebde14",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "3bbb622fa469f5c7",
+  "name" : "Регистрация нового пользователя",
   "time" : {
-    "start" : 1696784818525,
-    "stop" : 1696784832803,
-    "duration" : 14278
+    "start" : 1697474200316,
+    "stop" : 1697474204012,
+    "duration" : 3696
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "975320a57f2f9150",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "bf78e61e2b4b9055",
+  "name" : "Вход в аккаунт через кнопку Войти в форме регистрации",
   "time" : {
-    "start" : 1696784832995,
-    "stop" : 1696784837264,
-    "duration" : 4269
+    "start" : 1697474156729,
+    "stop" : 1697474166504,
+    "duration" : 9775
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e2dca57afee38a01",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "47f537f9e2bd286f",
+  "name" : "Проверка работы перехода к разделу Соусы в Конструкторе",
   "time" : {
-    "start" : 1696784847923,
-    "stop" : 1696784861583,
-    "duration" : 13660
+    "start" : 1697474150999,
+    "stop" : 1697474156724,
+    "duration" : 5725
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "88db79e6a07efb9c",
-  "name" : "enterPersonalAccountTest",
+  "uid" : "c80a29c5640b9ca7",
+  "name" : "Проверка работы перехода к разделу Булка в конструкторе",
   "time" : {
-    "start" : 1696784883822,
-    "stop" : 1696784889115,
-    "duration" : 5293
+    "start" : 1697474139430,
+    "stop" : 1697474146861,
+    "duration" : 7431
   },
   "status" : "passed",
   "severity" : "normal"

@@ -1,8 +1,8 @@
-package tests.registrationTests;
+package tests.registration;
 
-import basePages.ConfigBrowser;
-import dataProvider.CreateUser;
-import dataProvider.RegFormRandomData;
+import base.pages.ConfigBrowser;
+import data.provider.CreateUser;
+import data.provider.RegFormRandomData;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;

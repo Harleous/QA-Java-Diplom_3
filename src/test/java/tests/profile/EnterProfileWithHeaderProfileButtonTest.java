@@ -26,7 +26,7 @@ public class EnterProfileWithHeaderProfileButtonTest {
 
     @Test
     @DisplayName("Переход по клику на «Личный кабинет»")
-    public void enterPersonalAccountTest() {
+    public void enterProfileFromHeaderTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");

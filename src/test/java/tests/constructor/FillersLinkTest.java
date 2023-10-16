@@ -8,23 +8,23 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.AuthFormPage;
 
+import static constants.LocatorsAndDataConstants.CHOSEN_BUTTON_CLASS_CONTAINS_STRING;
 import static pageObjects.BurgerHomePage.openHomePage;
-import static pageObjects.Constructor.FILLERS_BUTTON;
-import static pageObjects.Constructor.clickFillersButton;
+import static pageObjects.Constructor.*;
 
-public class FillersTest {
+public class FillersLinkTest {
     public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
 
     @Test
     @DisplayName("Проверка работы перехода к разделу Начинка в Конструкторе")
-    public void enterPersonalAccountTest() {
+    public void switchToFillersTest() {
 
         openHomePage();
         clickFillersButton();
-        String actualClass = driver.findElement(FILLERS_BUTTON).getAttribute("class");
-        Assert.assertTrue(actualClass.contains("tab_tab_type_current__2BEPc"));
+        getActualFillersClass();
+        Assert.assertTrue(actualClassFillers.contains(CHOSEN_BUTTON_CLASS_CONTAINS_STRING));
     }
 
     @After

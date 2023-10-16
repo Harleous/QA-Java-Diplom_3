@@ -1,12 +1,12 @@
 {
-  "uid" : "5f77091a5270ca53",
-  "name" : "authorizationWithWrongPasswordFails",
-  "fullName" : "tests.registrationTests.AuthorizationWrongPasswordTest.authorizationWithWrongPasswordFails",
-  "historyId" : "d2485531b4db1988cc8b18204b422861",
+  "uid" : "3bbb622fa469f5c7",
+  "name" : "Регистрация нового пользователя",
+  "fullName" : "tests.registration.RegistrationFlowTest.registrationFlowOpensAuthorizationPageTest",
+  "historyId" : "76b614b896878732f0e355e7f0a4a524",
   "time" : {
-    "start" : 1696784929028,
-    "stop" : 1696784937554,
-    "duration" : 8526
+    "start" : 1697474200316,
+    "stop" : 1697474204012,
+    "duration" : 3696
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,22 +15,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "tests.registrationTests"
+    "value" : "tests.registration"
   }, {
     "name" : "testClass",
-    "value" : "tests.registrationTests.AuthorizationWrongPasswordTest"
+    "value" : "tests.registration.RegistrationFlowTest"
   }, {
     "name" : "testMethod",
-    "value" : "authorizationWithWrongPasswordFails"
+    "value" : "registrationFlowOpensAuthorizationPageTest"
   }, {
     "name" : "suite",
-    "value" : "tests.registrationTests.AuthorizationWrongPasswordTest"
+    "value" : "tests.registration.RegistrationFlowTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "10408@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5f77091a5270ca53.json",
+  "source" : "3bbb622fa469f5c7.json",
   "parameterValues" : [ ]
 }

@@ -16,18 +16,17 @@ import static pageObjects.AuthFormPage.authorize;
 import static pageObjects.ForgotPasswordPage.clickEnterButtonInFogrotPasswordForm;
 import static pageObjects.ForgotPasswordPage.openForgotPasswordPage;
 
-public class EnterAccountFromEnterButtonInForgotPasswordForm {
+public class EnterAccountFromEnterButtonInForgotPasswordForm  {
     public static String accessToken;
     WebDriver driver = ConfigBrowser.startDriver();
     AuthFormPage authFormPage = new AuthFormPage(driver);
 
     @Test
     @DisplayName("Вход в личный кабинет из формы 'Забыл пароль'")
-    public void enterPersonalAccountTest() {
+    public void enterPersonalAccountFromForgotPasswordTest() {
 
         CreateUser createUser = RegFormRandomData.getUserData();
         accessToken = UserClient.create(createUser).extract().jsonPath().get("accessToken");
-
         openForgotPasswordPage();
         clickEnterButtonInFogrotPasswordForm();
         authorize(createUser);
