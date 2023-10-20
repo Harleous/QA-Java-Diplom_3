@@ -1,0 +1,56 @@
+{
+  "uid" : "c0d2e5bc9cef231d",
+  "name" : "Переход из личного кабинета в конструктор",
+  "fullName" : "tests.profile.ConstructorLinkFromProfileTest.enterConstructorFromProfileTest",
+  "historyId" : "7d2979290e93ad097e5eb1894e47310a",
+  "time" : {
+    "start" : 1697474175773,
+    "stop" : 1697474180646,
+    "duration" : 4873
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.profile"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.profile.ConstructorLinkFromProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "enterConstructorFromProfileTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.profile.ConstructorLinkFromProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c0d2e5bc9cef231d.json",
+  "parameterValues" : [ ]
+}

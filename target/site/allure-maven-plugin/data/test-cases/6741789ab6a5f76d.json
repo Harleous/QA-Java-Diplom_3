@@ -1,0 +1,56 @@
+{
+  "uid" : "6741789ab6a5f76d",
+  "name" : "Вход по кнопке «Войти в аккаунт» на главной",
+  "fullName" : "tests.enter.account.EnterPersonalAccountTest.enterPersonalAccountTest",
+  "historyId" : "10494df2e233c98648f5963f20dcf9fb",
+  "time" : {
+    "start" : 1697474171501,
+    "stop" : 1697474175773,
+    "duration" : 4272
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.enter.account"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.enter.account.EnterPersonalAccountTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "enterPersonalAccountTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.enter.account.EnterPersonalAccountTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6741789ab6a5f76d.json",
+  "parameterValues" : [ ]
+}

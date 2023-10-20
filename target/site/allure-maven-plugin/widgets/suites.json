@@ -1,0 +1,114 @@
+{
+  "total" : 12,
+  "items" : [ {
+    "uid" : "053758b1d4ccbef1e9ce6c323db11ab1",
+    "name" : "tests.constructor.BunLinkTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "3236fa57febe25e4bb76b67e8f07f653",
+    "name" : "tests.constructor.FillersLinkTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "41d12d6ff0ca11191c4e6dc4f0aeaa74",
+    "name" : "tests.constructor.SoucesLinkTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "0ab79b63c395b0c6236570052b0bc700",
+    "name" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "bce3dbb5e6a8e98db0e04511d2037153",
+    "name" : "tests.enter.account.EnterAccountWithLichniiKabinetButtonTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "e7777b49cbdef69e6de8824878e3bb72",
+    "name" : "tests.enter.account.EnterPersonalAccountTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "dcb3588344b06b2495ea0d63c23d3ea3",
+    "name" : "tests.profile.ConstructorLinkFromProfileTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "2204bc955a7a6ff11464df16ea11b863",
+    "name" : "tests.profile.EnterProfileWithHeaderProfileButtonTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "88f1acf15b44c5a2ae4600dc73b715f3",
+    "name" : "tests.profile.LogoFromProfileClickTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "5b9869565b39372a9460973986789faa",
+    "name" : "tests.profile.LogOutTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

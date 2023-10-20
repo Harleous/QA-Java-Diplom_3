@@ -1,0 +1,209 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests.constructor.BunLinkTest",
+    "children" : [ {
+      "name" : "Проверка работы перехода к разделу Булка в конструкторе",
+      "uid" : "c80a29c5640b9ca7",
+      "parentUid" : "053758b1d4ccbef1e9ce6c323db11ab1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474139430,
+        "stop" : 1697474146861,
+        "duration" : 7431
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "053758b1d4ccbef1e9ce6c323db11ab1"
+  }, {
+    "name" : "tests.constructor.FillersLinkTest",
+    "children" : [ {
+      "name" : "Проверка работы перехода к разделу Начинка в Конструкторе",
+      "uid" : "e1d44fa03a44f298",
+      "parentUid" : "3236fa57febe25e4bb76b67e8f07f653",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474146964,
+        "stop" : 1697474150995,
+        "duration" : 4031
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3236fa57febe25e4bb76b67e8f07f653"
+  }, {
+    "name" : "tests.constructor.SoucesLinkTest",
+    "children" : [ {
+      "name" : "Проверка работы перехода к разделу Соусы в Конструкторе",
+      "uid" : "47f537f9e2bd286f",
+      "parentUid" : "41d12d6ff0ca11191c4e6dc4f0aeaa74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474150999,
+        "stop" : 1697474156724,
+        "duration" : 5725
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "41d12d6ff0ca11191c4e6dc4f0aeaa74"
+  }, {
+    "name" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest",
+    "children" : [ {
+      "name" : "Вход в аккаунт через кнопку Войти в форме регистрации",
+      "uid" : "bf78e61e2b4b9055",
+      "parentUid" : "0ab79b63c395b0c6236570052b0bc700",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474156729,
+        "stop" : 1697474166504,
+        "duration" : 9775
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0ab79b63c395b0c6236570052b0bc700"
+  }, {
+    "name" : "tests.enter.account.EnterAccountWithLichniiKabinetButtonTest",
+    "children" : [ {
+      "name" : "Вход через кнопку «Личный кабинет»",
+      "uid" : "3fbc627aec2d457f",
+      "parentUid" : "bce3dbb5e6a8e98db0e04511d2037153",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474166504,
+        "stop" : 1697474171498,
+        "duration" : 4994
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bce3dbb5e6a8e98db0e04511d2037153"
+  }, {
+    "name" : "tests.enter.account.EnterPersonalAccountTest",
+    "children" : [ {
+      "name" : "Вход по кнопке «Войти в аккаунт» на главной",
+      "uid" : "6741789ab6a5f76d",
+      "parentUid" : "e7777b49cbdef69e6de8824878e3bb72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474171501,
+        "stop" : 1697474175773,
+        "duration" : 4272
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e7777b49cbdef69e6de8824878e3bb72"
+  }, {
+    "name" : "tests.profile.ConstructorLinkFromProfileTest",
+    "children" : [ {
+      "name" : "Переход из личного кабинета в конструктор",
+      "uid" : "c0d2e5bc9cef231d",
+      "parentUid" : "dcb3588344b06b2495ea0d63c23d3ea3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474175773,
+        "stop" : 1697474180646,
+        "duration" : 4873
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "dcb3588344b06b2495ea0d63c23d3ea3"
+  }, {
+    "name" : "tests.profile.EnterProfileWithHeaderProfileButtonTest",
+    "children" : [ {
+      "name" : "Переход по клику на «Личный кабинет»",
+      "uid" : "de259135b169c14d",
+      "parentUid" : "2204bc955a7a6ff11464df16ea11b863",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474180648,
+        "stop" : 1697474186031,
+        "duration" : 5383
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2204bc955a7a6ff11464df16ea11b863"
+  }, {
+    "name" : "tests.profile.LogoFromProfileClickTest",
+    "children" : [ {
+      "name" : "Переход по клику на логотип Stellar Burgers",
+      "uid" : "bde6446490dfb974",
+      "parentUid" : "88f1acf15b44c5a2ae4600dc73b715f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474186035,
+        "stop" : 1697474191295,
+        "duration" : 5260
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "88f1acf15b44c5a2ae4600dc73b715f3"
+  }, {
+    "name" : "tests.profile.LogOutTest",
+    "children" : [ {
+      "name" : "Выход из аккаунта по кнопке «Выйти» в личном кабинете",
+      "uid" : "14d380d621762b9f",
+      "parentUid" : "5b9869565b39372a9460973986789faa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474191300,
+        "stop" : 1697474196597,
+        "duration" : 5297
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5b9869565b39372a9460973986789faa"
+  }, {
+    "name" : "tests.registration.AuthorizationWrongPasswordTest",
+    "children" : [ {
+      "name" : "Авторизация с неправильным паролем",
+      "uid" : "b28651bf04fb0845",
+      "parentUid" : "977806666cf36bfcb2ebf095b65d8ac4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474196601,
+        "stop" : 1697474200311,
+        "duration" : 3710
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "977806666cf36bfcb2ebf095b65d8ac4"
+  }, {
+    "name" : "tests.registration.RegistrationFlowTest",
+    "children" : [ {
+      "name" : "Регистрация нового пользователя",
+      "uid" : "3bbb622fa469f5c7",
+      "parentUid" : "7293e4034d058c9c3d2bb3f0d97f68b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697474200316,
+        "stop" : 1697474204012,
+        "duration" : 3696
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7293e4034d058c9c3d2bb3f0d97f68b1"
+  } ]
+}

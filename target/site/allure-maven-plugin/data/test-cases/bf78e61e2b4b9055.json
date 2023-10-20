@@ -1,0 +1,56 @@
+{
+  "uid" : "bf78e61e2b4b9055",
+  "name" : "Вход в аккаунт через кнопку Войти в форме регистрации",
+  "fullName" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest.enterPersonalAccountFromRegFormTest",
+  "historyId" : "9706c6e3747cd2fef750edf7c18f3070",
+  "time" : {
+    "start" : 1697474156729,
+    "stop" : 1697474166504,
+    "duration" : 9775
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.enter.account"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "enterPersonalAccountFromRegFormTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.enter.account.EnterAccountWithEnterButtonInRegFormTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bf78e61e2b4b9055.json",
+  "parameterValues" : [ ]
+}

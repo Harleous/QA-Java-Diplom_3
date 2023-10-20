@@ -1,0 +1,56 @@
+{
+  "uid" : "3bbb622fa469f5c7",
+  "name" : "Регистрация нового пользователя",
+  "fullName" : "tests.registration.RegistrationFlowTest.registrationFlowOpensAuthorizationPageTest",
+  "historyId" : "76b614b896878732f0e355e7f0a4a524",
+  "time" : {
+    "start" : 1697474200316,
+    "stop" : 1697474204012,
+    "duration" : 3696
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.registration"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.registration.RegistrationFlowTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationFlowOpensAuthorizationPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.registration.RegistrationFlowTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3bbb622fa469f5c7.json",
+  "parameterValues" : [ ]
+}

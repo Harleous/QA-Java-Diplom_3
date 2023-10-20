@@ -1,0 +1,56 @@
+{
+  "uid" : "14d380d621762b9f",
+  "name" : "Выход из аккаунта по кнопке «Выйти» в личном кабинете",
+  "fullName" : "tests.profile.LogOutTest.logOutFromProfileTest",
+  "historyId" : "34c69390d712ff7c0e276e0d137cee69",
+  "time" : {
+    "start" : 1697474191300,
+    "stop" : 1697474196597,
+    "duration" : 5297
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.profile"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.profile.LogOutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "logOutFromProfileTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.profile.LogOutTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "17552@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "14d380d621762b9f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,121 @@
+[ {
+  "uid" : "bde6446490dfb974",
+  "name" : "Переход по клику на логотип Stellar Burgers",
+  "time" : {
+    "start" : 1697474186035,
+    "stop" : 1697474191295,
+    "duration" : 5260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1d44fa03a44f298",
+  "name" : "Проверка работы перехода к разделу Начинка в Конструкторе",
+  "time" : {
+    "start" : 1697474146964,
+    "stop" : 1697474150995,
+    "duration" : 4031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b28651bf04fb0845",
+  "name" : "Авторизация с неправильным паролем",
+  "time" : {
+    "start" : 1697474196601,
+    "stop" : 1697474200311,
+    "duration" : 3710
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de259135b169c14d",
+  "name" : "Переход по клику на «Личный кабинет»",
+  "time" : {
+    "start" : 1697474180648,
+    "stop" : 1697474186031,
+    "duration" : 5383
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0d2e5bc9cef231d",
+  "name" : "Переход из личного кабинета в конструктор",
+  "time" : {
+    "start" : 1697474175773,
+    "stop" : 1697474180646,
+    "duration" : 4873
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "14d380d621762b9f",
+  "name" : "Выход из аккаунта по кнопке «Выйти» в личном кабинете",
+  "time" : {
+    "start" : 1697474191300,
+    "stop" : 1697474196597,
+    "duration" : 5297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6741789ab6a5f76d",
+  "name" : "Вход по кнопке «Войти в аккаунт» на главной",
+  "time" : {
+    "start" : 1697474171501,
+    "stop" : 1697474175773,
+    "duration" : 4272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3fbc627aec2d457f",
+  "name" : "Вход через кнопку «Личный кабинет»",
+  "time" : {
+    "start" : 1697474166504,
+    "stop" : 1697474171498,
+    "duration" : 4994
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bbb622fa469f5c7",
+  "name" : "Регистрация нового пользователя",
+  "time" : {
+    "start" : 1697474200316,
+    "stop" : 1697474204012,
+    "duration" : 3696
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf78e61e2b4b9055",
+  "name" : "Вход в аккаунт через кнопку Войти в форме регистрации",
+  "time" : {
+    "start" : 1697474156729,
+    "stop" : 1697474166504,
+    "duration" : 9775
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47f537f9e2bd286f",
+  "name" : "Проверка работы перехода к разделу Соусы в Конструкторе",
+  "time" : {
+    "start" : 1697474150999,
+    "stop" : 1697474156724,
+    "duration" : 5725
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c80a29c5640b9ca7",
+  "name" : "Проверка работы перехода к разделу Булка в конструкторе",
+  "time" : {
+    "start" : 1697474139430,
+    "stop" : 1697474146861,
+    "duration" : 7431
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
